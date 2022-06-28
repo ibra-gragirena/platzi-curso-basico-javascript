@@ -1,0 +1,23 @@
+:root{
+    --black: #000000;
+    --olive: #1A4D2E;
+    --orange: #FF9F29;
+    --cream: #FAF3E3;
+    --sm: 1em;
+    --md: 1.5em;
+    --lg: 1.8em;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;  
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--cream)
+}
+
+.square_section{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Work+Sans:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Geometric Figures | Curso Práctico de Javascript en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Geometric Figures</h1>
+    </header>
+
+    <section>
+        <!-- Square-->
+
+        <div class="square_section">
+            <h2>Calculate the area and perimeter of a Square</h2>
+            <form>
+                <label for="inputSquare">
+                    How long is each side of your square? 
+                </label>
+                <input id="inputSquare" type="number"/>
+                <button type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
+                <button type="button" onclick="calculateSquareArea()">Calculate area</button>
+            </form>
+        </div>
+
+                <!-- Circulo-->
+
+
+        <div class="circle_section">
+            <h2>Calculate the area and perimeter of a Circle</h2>
+            <form>
+                <label for="inputCircle">
+                    How long is the radius of your circle?
+                </label>
+                <input id="inputCircle" type="number"/>
+                <button type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
+                <button type="button" onclick="calculateCircleArea()">Calculate area</button>
+            </form>
+        </div>
+
+                <!-- Triangulo-->
+
+        <div class="triangle_section">
+            <h2>Calculate the area and perimeter of a Circle</h2>
+            <form>
+                <p>How long are the parts of the triangle?</p>
+
+                <label for="inputTriangle1">
+                    Side A
+                </label>
+                <input id="inputTriangle1" type="number"/>
+
+
+                <label for="inputTriangle2">
+                    Side B
+                </label>
+                <input id="inputTriangle2" type="number"/>
+
+
+                <label for="inputTriangleBase">
+                    Base
+                </label>
+                <input id="inputTriangleBase" type="number"/>
+
+
+                <label for="inputTriangleHeight">
+                    Height
+                </label>
+                <input id="inputTriangleHeight" type="number"/>
+
+                <button type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
+                <button type="button" onclick="calculateTriangleArea()">Calculate area</button>
+            </form>
+        </div>
+
+                <!-- Triangulo Isósceles-->
+
+        <div class="triangle_section">
+            <h2>Calculate the Height of a Isosceles Triangle</h2>
+            <form>
+                <p>How long are the parts of the triangle?</p>
+
+                <label for="inputTriangle1">
+                    Side A
+                </label>
+                <input id="inputTriangle1" type="number"/>
+
+                <label for="inputTriangle2">
+                    Side B
+                </label>
+                <input id="inputTriangle2" type="number"/>
+
+                <label for="inputTriangleBase">
+                    Base
+                </label>
+                <input id="inputTriangleBase" type="number"/>
+
+
+                <button type="button" onclick="calculateTriangleHeight()">Calculate Height</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
