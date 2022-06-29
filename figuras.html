@@ -12,102 +12,113 @@
 </head>
 <body>
     <header>
-        <h1>Geometric Figures</h1>
+        <img src="./icons/math.png" alt="math-logo">
+        <h1>G E O M E T R I C . C A L C</h1>
     </header>
 
-    <section>
+    <section class="section">
         <!-- Square-->
 
         <div class="square_section">
             <h2>Calculate the area and perimeter of a Square</h2>
-            <form>
-                <label for="inputSquare">
+            <form class="form">
+                <label class="label" for="inputSquare">
                     How long is each side of your square? 
                 </label>
-                <input id="inputSquare" type="number"/>
-                <button type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
-                <button type="button" onclick="calculateSquareArea()">Calculate area</button>
+                <img src="./icons/square.png" alt="square">
+                <input class="input" id="inputSquare" type="number"/>
+                <button class="primary-button" type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
+                <button class="primary-button" type="button" onclick="calculateSquareArea()">Calculate area</button>
             </form>
         </div>
 
+        <hr class="rounded">
                 <!-- Circulo-->
 
 
         <div class="circle_section">
             <h2>Calculate the area and perimeter of a Circle</h2>
-            <form>
-                <label for="inputCircle">
+            <form class="form">
+                <label class="label" for="inputCircle">
                     How long is the radius of your circle?
                 </label>
-                <input id="inputCircle" type="number"/>
-                <button type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
-                <button type="button" onclick="calculateCircleArea()">Calculate area</button>
+                <img src="./icons/circle.png" alt="circle">
+                <input class="input"  id="inputCircle" type="number"/>
+                <button class="primary-button" type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
+                <button class="primary-button" type="button" onclick="calculateCircleArea()">Calculate area</button>
             </form>
         </div>
 
-                <!-- Triangulo-->
+        <hr class="rounded">
+            <!-- Triangulo-->
 
         <div class="triangle_section">
-            <h2>Calculate the area and perimeter of a Circle</h2>
-            <form>
+            <h2>Calculate the area and perimeter of a Triangle</h2>
+            <form class="form">
                 <p>How long are the parts of the triangle?</p>
 
-                <label for="inputTriangle1">
+                <img src="./icons/triangle.png" alt="triangle">
+                <label class="label" for="inputTriangle1">
                     Side A
                 </label>
-                <input id="inputTriangle1" type="number"/>
+                <input class="input"  id="inputTriangle1" type="number"/>
 
 
-                <label for="inputTriangle2">
+                <label class="label"  for="inputTriangle2">
                     Side B
                 </label>
-                <input id="inputTriangle2" type="number"/>
+                <input class="input"  id="inputTriangle2" type="number"/>
 
 
-                <label for="inputTriangleBase">
+                <label class="label" for="inputTriangleBase">
                     Base
                 </label>
-                <input id="inputTriangleBase" type="number"/>
+                <input class="input"  id="inputTriangleBase" type="number"/>
 
 
-                <label for="inputTriangleHeight">
+                <label class="label" for="inputTriangleHeight">
                     Height
                 </label>
-                <input id="inputTriangleHeight" type="number"/>
+                <input class="input"  id="inputTriangleHeight" type="number"/>
 
-                <button type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
-                <button type="button" onclick="calculateTriangleArea()">Calculate area</button>
+                <button class="primary-button" type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
+                <button class="primary-button" type="button" onclick="calculateTriangleArea()">Calculate area</button>
             </form>
         </div>
 
+        <hr class="rounded">
                 <!-- Triangulo Isósceles-->
 
         <div class="triangle_section">
             <h2>Calculate the Height of a Isosceles Triangle</h2>
-            <form>
+            <form class="form">
                 <p>How long are the parts of the triangle?</p>
 
-                <label for="inputTriangle1">
+                <img src="./icons/triangle.png" alt="triangle">
+
+                <label class="label"  for="inputTriangle1">
                     Side A
                 </label>
-                <input id="inputTriangle1" type="number"/>
+                <input class="input"  id="inputTriangle1" type="number"/>
 
-                <label for="inputTriangle2">
+                <label class="label"  for="inputTriangle2">
                     Side B
                 </label>
-                <input id="inputTriangle2" type="number"/>
+                <input class="input"  id="inputTriangle2" type="number"/>
 
-                <label for="inputTriangleBase">
+                <label class="label" for="inputTriangleBase">
                     Base
                 </label>
-                <input id="inputTriangleBase" type="number"/>
+                <input class="input" id="inputTriangleBase" type="number"/>
 
 
-                <button type="button" onclick="calculateTriangleHeight()">Calculate Height</button>
+                <button class="primary-button" type="button" onclick="calculateTriangleHeight()">Calculate Height</button>
             </form>
         </div>
+        <div class="social">
+            <h2> Made with love by : @ibragragirena</h2>
+        </div>
     </section>
-
 
 
 

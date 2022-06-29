@@ -7,7 +7,13 @@
     --md: 1.5em;
     --lg: 1.8em;
 }
-
+header{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 2px;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Work Sans', sans-serif;  
@@ -16,8 +22,108 @@ body{
     justify-items: center;
     background-color: var(--cream)
 }
+h2{
+    font-size: var(--md);
+    color: var(--olive);
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items:flex-start;
+    justify-content: center;
+    border-radius: 2em; 
+    background-color: var(--cream);
+    text-align: center;
+    
+}
 
 .square_section{
     display: flex;
     flex-direction: column;
+    border: solid 8px var(--olive);
+
+}
+.circle_section{
+    display: flex;
+    flex-direction: column;
+    border: solid 8px var(--olive);
+
+}
+.triangle_section{
+    display: flex;
+    flex-direction: column;
+    border: solid 8px var(--olive);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+    width: 300px;
+    color: var(--olive);
+}
+.input {
+    background-color: var();
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 50%;
+    font-size: var(--md);
+    padding: 6px;
+    margin: 12px;
+}
+.primary-button {
+    background-color: var(--orange);
+    border-radius: 8px;
+    border: none;
+    color: var(--black);
+    width: 50%;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 50px;
+    margin: 8px;
+}
+.social{
+    position: absolute;
+    left: 600px;
+    top: 1100px;
+}
+img{
+    width: 50px;
+    height: 100%;
+    margin: 10px;
+}
+p {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+    width: 300px;
+}
+hr.rounded {
+   display: none;
+}
+
+
+  
+@media (max-width: 640px) {
+    .section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    hr.rounded {
+        display: block;
+        width: 100%;
+        border-top: 8px solid var(--black);
+        border-radius: 2px;
+    }
+    .social{
+        display: none;
+    }
 }

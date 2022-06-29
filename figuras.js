@@ -138,5 +138,4 @@ function calculateTriangleArea() {
 
 //Isosceles 
 function calculateIsoscelesHeight() {
-    const 
 }
