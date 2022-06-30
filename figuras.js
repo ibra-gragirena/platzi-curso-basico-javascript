@@ -29,11 +29,21 @@ function areaTriangulo (base, altura) {
 }
 
 // Isosceles
-function alturaTriangulo(lado1, lado2, base) {
+function alturaTrianguloIsosceles(lado1, lado2, base) {
     if (lado1 != lado2) {
         console.error("The sides are not equal")
     }
     else{
+        //Construimos los nuevos lados cortando el triangulo al medio
+        const ladoTiny2 = base / 2;
+        const baseTiny = lado1;
+
+        const ladoTiny2Cuadrado = ladoTiny2 * ladoTiny2;
+        const baseTinyCuadrado = baseTiny * baseTiny;
+
+        const ladoTiny1 = Math.sqrt(baseTinyCuadrado - ladoTiny2Cuadrado)
+        const altura = ladoTiny1;
+        return altura;
         
     }
 }
@@ -138,4 +148,14 @@ function calculateTriangleArea() {
 
 //Isosceles 
 function calculateIsoscelesHeight() {
+    const input1 = document.getElementById("inputTriangle1");
+    const input2 = document.getElementById("inputTriangle2");
+    const inputBase = document.getElementById("inputTriangleBase");
+   
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const valueBase = Number(inputBase.value);
+
+    const height = alturaTrianguloIsosceles(value1, value2, valueBase);
+    alert(height);
 }
