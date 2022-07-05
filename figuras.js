@@ -148,7 +148,7 @@ function calculateTriangleArea() {
     const valueHeight = inputHeight.value;
 
     const area = areaTriangulo(valueBase, valueHeight);
-    alert(area);
+    alert(area); 
 }
 
 //Isosceles 

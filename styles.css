@@ -1,8 +1,12 @@
 :root{
-    --black: #000000;
-    --olive: #1A4D2E;
-    --orange: #FF9F29;
-    --cream: #FAF3E3;
+    --white : #F9F2ED;
+    --blue : #3AB0FF;
+    --orange : #FFB562;
+    --red : #F87474;
+    --darkbrown : #1C0A00;
+    --brown : #361500;
+    --lightbrown : #603601;
+    --mustard : #CC9544;
     --sm: 1em;
     --md: 1.5em;
     --lg: 1.8em;
@@ -11,7 +15,7 @@ header{
     display: flex;
     align-items: flex-start;
     width: 100%;
-    background-color: var(--orange);
+    background-color: var(--red);
     border-radius: 2px;
 }
 body{
@@ -20,11 +24,11 @@ body{
     display: grid;
     align-items: center;
     justify-items: center;
-    background-color: var(--cream)
+    background-color: var(--white)
 }
 h2{
     font-size: var(--md);
-    color: var(--olive);
+    color: var(--black);
 }
 .section{
     display: grid;
@@ -38,10 +42,11 @@ h2{
     
 }
 
-.square_section{
+.square_section,
+.circle_section,
+.triangle_section{
     display: flex;
     flex-direction: column;
-    border: solid 8px var(--olive);
 
 }
 .circle_section{
@@ -66,7 +71,7 @@ h2{
     font-weight: bold;
     margin-bottom: 4px;
     width: 300px;
-    color: var(--olive);
+    color: var(--brown);
 }
 .input {
     background-color: var();
