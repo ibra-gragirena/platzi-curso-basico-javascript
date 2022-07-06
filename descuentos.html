@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Work+Sans:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Percentages and discounts | Curso Práctico de Javascript en Platzi</title>
+</head>
+<body>
+    <header>
+        <img src="./icons/percentage.png" alt="percentage" />
+        <h1>Percentages and discounts</h1>
+    </header>
+    <section class="card">
+            <h2>CALCULATE THE FINAL PRICE</h2>
+
+        <form class="form">
+            <label class="label" for="inputPrice" >PRICE $</label>
+            <input class="input" id="inputPrice" type="number"  /> <!--oninput="onClickButtonPrice()" Para leer automatico el texto del user combinado al discount.-->
+
+           <!--<label class="label" for="inputDiscount">DISCOUNT %</label>--> 
+            <!-- <input class="input" id="inputDiscount" type="number" oninput="onClickButtonPrice()" />--> 
+
+            <label class="label" for="inputCoupon">COUPON %</label>
+            <input class="input" id="inputCoupon" type="text" />
+            <button class="primary-button" type="button" onclick="onClickButtonPrice()"> ADD COUPON </button>
+
+            <h2 class="finalPrice">FINAL PRICE</h2>
+            <div class="result" id="resultPrice"></div>
+
+        </form>
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
