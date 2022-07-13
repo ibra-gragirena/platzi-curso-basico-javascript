@@ -23,5 +23,16 @@ Curso básico JS - Platzi
     - 4.1 : Crear formulario para que los usuarios ingresen info
     - 4.2 : Crear botón que envie info a Js
     - 4.3 : Crear función para retornar valor final 
+    
+    ## Taller #3 Promedio, mediana y moda
+
+- Paso 1 : Definir fórmulas
+- Paso 2 : Implementar fórmulas en JS para obtener promedios , medianas y modas
+- Paso 3 : Crear funciones para cada una
+- Paso 4 : Integrar JS con HTML y así hacer una interfaz para un usuario.
+    - 4.1 : Crear formulario para que los usuarios ingresen info
+    - 4.2 : Crear botón que envie info a Js
+    - 4.3 : Crear función para retornar valor final 
+
 
     

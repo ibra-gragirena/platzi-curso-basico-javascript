@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Work+Sans:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Promedio, mediana, moda  | Curso Práctico de Javascript en Platzi</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons.flaticon.com/png/512/5108/premium/5108495.png?token=exp=1657681351~hmac=4a73fd8b45985e99e91b44bdcc14ac0c">
+        <h1>Promedio</h1>
+
+    </header>
+    
+    <section class="card">
+        <h2>Calcula el promedio de edades de los alumnos</h2>
+
+        <form class="form">
+
+            <label class="label" for="Age">COLOCA LA EDAD ACÁ</label>
+            <input class="input" id="Age" type="number" />
+
+            <input class="primary-button" type="button" value="Save" onclick="savedata()">
+            <input class="primary-button" type="button" value="Show data" onclick="displayData()">
+
+            <button class="primary-button" type="button" onclick="calcularMediaAritmetica(lista)">Calcular promedio</button>
+        </form>
+        
+
+        <div id="display"></div>
+
+
+    </section>
+
+
+
+
+    
+    <script src="./promedio.js"></script>
+</body>
+</html>
