@@ -1,15 +1,13 @@
 let lista = [
     500,
     300,
-    200,
-    400,
     100,
-    10,
+    400,
+    200,
+    600,
 ];
 
-lista.sort(function(a, b) {
-    return a - b;
-});
+lista.sort((a, b) =>  a - b);
 
 function savedata(){
     const inputAge = document.getElementById('Age').value;  

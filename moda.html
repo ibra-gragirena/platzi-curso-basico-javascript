@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Work+Sans:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Promedio, mediana, moda  | Curso Práctico de Javascript en Platzi</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/1162/1162489.png">
+        <h1>Moda</h1>
+
+    </header>
+    
+    <section class="card">
+        <div class="container">
+
+            <h2>Calcula la moda de edades de los alumnos</h2>
+    
+            <form class="form">
+    
+                <label class="label" for="Age">COLOCA LA EDAD ACÁ</label>
+                <input class="input" id="Age" type="number" />
+    
+                <input class="primary-button" type="button" value="Save" onclick="savedata()">
+                <input class="primary-button" type="button" value="Show" onclick="displayList()">
+    
+                <button class="primary-button" type="button" onclick="displayModa()">Calcular Moda</button>
+                <div id="display"></div>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="./moda.js"></script>
+</body>
+</html>
