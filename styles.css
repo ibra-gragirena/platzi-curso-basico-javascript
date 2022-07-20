@@ -29,7 +29,6 @@ body{
     justify-items: center;
     background-color: var(--ocean);
     border: 4px solid var(--darkbrown);
-
 }
 h2{
     font-size: var(--md);
@@ -59,7 +58,7 @@ h2.finalPrice{
 
 .section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     width: 100%;
     align-items:flex-start;
     justify-content: center;
@@ -164,13 +163,10 @@ hr.rounded {
     border-radius: 8px;
     border: none;
     color: var(--white);
-    width: 100%;
-    height: 100%;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: bold;
     margin: 8px;
     text-align: center;
-    margin: 10;
 }
 .container{
     background-color: var(--lightblue);
@@ -191,4 +187,8 @@ hr.rounded {
     .social{
         display: none;
     }
+   #display{
+    font-size: 12px;
+
+   }
 }
