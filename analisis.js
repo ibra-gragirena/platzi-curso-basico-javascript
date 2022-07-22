@@ -14,22 +14,47 @@ function calcularMediaAritmetica(lista) {
     const promedioLista = sumaLista / lista.length;
     return promedioLista;
 
+
 }
 
 //Display 
-function savedata(){
-    const inputAge = document.getElementById('Age').value;  
-    const ageValue = lista.push(Number(inputAge)); 
+function saveSalary(){
+    const inpuSalary = document.getElementById('salary').value;  
+    const salaryValue = lista.push(Number(inpuSalary)); 
+  }
+function saveTips(){
+    const inputTips = document.getElementById('tips').value;  
+    const tipsValue = lista.push(Number(inputTips)); 
   }
 
-  function displayData() 
-{
-    
-  let content = [...salariosColSorted] ;
- console.log(content);
-  document.getElementById('display').innerHTML = "Rango de salarios : " + content;
+function displaySalary() 
+{  
+  let content = [...salariosNereaSorted] ;
+    document.getElementById('display').innerHTML = "Rango de salarios : " + content;
 }
+function displayPromedioSalary() {
+    let content =  calcularMediaAritmetica(salariosNereaSorted);
+    document.getElementById("display");
+    display.innerText = "El salario promedio es de " + content + " $";
+  
+}
+function displayTips() 
+{
+  let content = [...tipsSorted];
+    document.getElementById('display').innerHTML = "Tips : " + content;
+    document.getElementById('secondDisplay').innerHTML = "Tips : " + content;
+}
+function displayPromedioTips() {
+    let content =  calcularMediaAritmetica(tipsSorted);
+    
 
+     document.getElementById("display");
+    display.innerText = "El promedio de tips es de " + content + " $";
+  
+    document.getElementById("secondDisplay");
+    secondDisplay.innerText = "El promedio de tips es de " + content + " $";
+  
+}
 
 
     // Calculadora de mediana
@@ -58,29 +83,42 @@ function savedata(){
 
     // Mediana General
 
-let salariosCol = colombia.map(
+let salariosNerea = nerea.map(
     function (persona) {
         return persona.salary;
     }
 );
 
-let salariosColSorted = salariosCol.sort((a, b) =>  a - b);
+let salariosNereaSorted = salariosNerea.sort((a, b) =>  a - b);
 
-let medianaGeneralCol =  medianaSalarios(salariosColSorted)
+let medianaGeneralNerea =  medianaSalarios(salariosNereaSorted);
 
 // Mediana del top 10%
 
-let spliceStart = (salariosColSorted.length * 90 ) / 100;
-let spliceCount = salariosColSorted.length - spliceStart;
+let spliceStart = (salariosNereaSorted.length * 90 ) / 100;
+let spliceCount = salariosNereaSorted.length - spliceStart;
 
-let salariosColTop10 = salariosColSorted.splice(
+let salariosNereaTop10 = salariosNereaSorted.splice(
    spliceStart,
-   spliceCount,
+   Math.round(spliceCount),
 );
 
-let medianaTop10Col =  medianaSalarios(salariosColTop10);
+let medianaTop10Nerea =  medianaSalarios(salariosNereaTop10);
 
 console.log({
-    medianaGeneralCol,
-    medianaTop10Col, 
+    medianaGeneralNerea,
+    medianaTop10Nerea, 
 });
+
+
+// Tips
+let tipsNerea = tips.map(
+    function(date) {
+        return date.amount;
+    }
+);
+let tipsSorted = tipsNerea.sort((a, b) =>  a - b);
+
+let medianaTips =  medianaSalarios(tipsSorted);
+
+

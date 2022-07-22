@@ -12,28 +12,53 @@
 </head>
 <body>
     <header>
-        <img src="./icons/math.png">
+        <img src="./icons/math.png" />
         <h1>Salarios</h1>
 
     </header>
     
     <section class="card">
-        <h2>Calcula el promedio de edades de los alumnos</h2>
+        <div class="header-section">
+            <h2>Analisis Salarial</h2>
+        </div>
 
         <form class="form">
+            <!--SALARY-->
+            <label class="label" for="salary">INGRESA SALARIOS</label>
+            <input class="input" id="salary" type="number" />
 
-            <label class="label" for="Age">COLOCA LA EDAD ACÁ</label>
-            <input class="input" id="Age" type="number" />
+            <input class="primary-button" type="button" value="Save" onclick="saveSalary()">
+            <input class="primary-button" type="button" value="Show salary" onclick="displaySalary()">
 
-            <input class="primary-button" type="button" value="Save" onclick="savedata()">
-            <input class="primary-button" type="button" value="Show data" onclick="displayData()">
-
-            <button class="primary-button" type="button" onclick="calcularMediaAritmetica(lista)">Calcular promedio</button>
+            <button class="primary-button" type="button" onclick="displayPromedioSalary()">Calcular promedio</button>
+        </form>
+        <hr class="linea">
+        <form class="form">
+            
+             <!--TIPS-->
+            <label class="label" for="tips">INGRESA PROPINA</label>
+            <input class="input" id="tips" type="number" />
+            <input class="primary-button" type="button" value="Save" onclick="saveTips()">
+            <input class="primary-button" type="button" value="Show tips" onclick="displayTips()">
+        
+            <button class="primary-button" type="button" onclick="displayPromedioTips()">Calcular promedio</button>
+            
         </form>
         
+        <div class="data">
+            <div class="displayImg">
+                <img src="./icons/percentage.png" />
+            </div>
+            <div id="display"></div>
+        </div>
 
-        <div id="display"></div>
 
+        <div class="dataTips">
+            <div class="displayImg">
+                <img src="./icons/percentage.png" />
+            </div>
+            <div id="secondDisplay"></div>
+        </div>
 
     </section>
 
@@ -42,6 +67,7 @@
 
     
     <script src="./salarios.js"></script>
+    <script src="./tips.js"></script>
     <script src="./analisis.js"></script>
 </body>
 </html>
