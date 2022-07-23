@@ -11,30 +11,35 @@
     <title>Promedio, mediana, moda  | Curso Práctico de Javascript en Platzi</title>
 </head>
 <body>
-    <header>
-        <img src="https://cdn-icons.flaticon.com/png/512/5108/premium/5108495.png?token=exp=1657681351~hmac=4a73fd8b45985e99e91b44bdcc14ac0c">
-        <h1>Promedio</h1>
-
+    <header class="nav-bar">
+        <nav>
+            <div>
+                <img class="js" src="./icons/js.png" />
+            </div>    
+            <a class="user" href="https://www.linkedin.com/in/ibrahim-gragirena-0a2a38190/" target="_blank">@IBRAGRAGIRENA</a>
+        </nav> 
     </header>
     
     <section class="card">
-        <h2>Calcula el promedio de edades de los alumnos</h2>
+        <div class="container">
+            <h2 class="titulos">Calcula el promedio de edades de los alumnos</h2>
+    
+            <form class="form">
+    
+                <label class="label" for="Age">COLOCA LA EDAD ACÁ</label>
+                <input class="input" id="Age" type="number" />
+    
+                <input class="primary-button" type="button" value="Save" onclick="savedata()">
+                <input class="primary-button" type="button" value="Show data" onclick="displayData()">
+    
+                <button class="primary-button" type="button" onclick="calcularMediaAritmetica(lista)">Calcular promedio</button>
+            </form>
+            
+    
+            <div id="display"></div>
+        </div>
 
-        <form class="form">
-
-            <label class="label" for="Age">COLOCA LA EDAD ACÁ</label>
-            <input class="input" id="Age" type="number" />
-
-            <input class="primary-button" type="button" value="Save" onclick="savedata()">
-            <input class="primary-button" type="button" value="Show data" onclick="displayData()">
-
-            <button class="primary-button" type="button" onclick="calcularMediaAritmetica(lista)">Calcular promedio</button>
-        </form>
-        
-
-        <div id="display"></div>
-
-
+        </div>
     </section>
 
 
@@ -42,5 +47,10 @@
 
     
     <script src="./promedio.js"></script>
+    <script src="./moda.js"></script>
+    <script src="./mediana.js"></script>
+    <script src="./PIC.js"></script>
+
+
 </body>
 </html>

@@ -11,31 +11,54 @@
     <title>Percentages and discounts | Curso Práctico de Javascript en Platzi</title>
 </head>
 <body>
-    <header>
-        <img src="./icons/percentage.png" alt="percentage" />
-        <h1>Percentages and discounts</h1>
+    <header class="nav-bar">
+        <nav>
+            <div>
+                <img class="js" src="./icons/js.png" />
+            </div>    
+            <a class="user" href="https://www.linkedin.com/in/ibrahim-gragirena-0a2a38190/" target="_blank">@IBRAGRAGIRENA</a>
+        </nav> 
     </header>
-    <section class="card">
-            <h2>CALCULATE THE FINAL PRICE</h2>
 
-        <form class="form">
-            <label class="label" for="inputPrice" >PRICE $</label>
-            <input class="input" id="inputPrice" type="number"  /> 
+    <main>
+        <section class="card">
+            <header>
+                <h2>Taller #2 Porcentajes y descuentos</h2>
+                <h1>Calcula el precio final con descuento</h1>
+            </header>
+    
+            <div class="taller">
+                <section class="discount">
+                    <form class="form">
+                        <label class="label" for="inputPrice" >PRICE $</label>
+                        <input class="input" id="inputPrice" type="number"  /> 
+                        
+                        <!--oninput="onClickButtonPrice()" Para leer automatico el texto del user combinado al discount.-->
             
-            <!--oninput="onClickButtonPrice()" Para leer automatico el texto del user combinado al discount.-->
-
-           <!--<label class="label" for="inputDiscount">DISCOUNT %</label>--> 
-            <!-- <input class="input" id="inputDiscount" type="number" oninput="onClickButtonPrice()" />--> 
-
-            <label class="label" for="inputCoupon">COUPON %</label>
-            <input class="input" id="inputCoupon" type="text" />
-            <button class="primary-button" type="button" onclick="onClickButtonPrice()"> ADD COUPON </button>
-
-            <h2 class="finalPrice">FINAL PRICE</h2>
-            <div class="result" id="resultPrice"></div>
-
-        </form>
-    </section>
+                       <!--<label class="label" for="inputDiscount">DISCOUNT %</label>--> 
+                        <!-- <input class="input" id="inputDiscount" type="number" oninput="onClickButtonPrice()" />--> 
+            
+                        <label class="label" for="inputCoupon">COUPON %</label>
+                        <input class="input" id="inputCoupon" type="text" />
+                        <button class="primary-button" type="button" onclick="onClickButtonPrice()"> ADD COUPON </button>
+            
+                        <h2 class="finalPrice">FINAL PRICE</h2>
+                        <div class="result" id="resultPrice"></div>
+            
+                    </form>
+                </section>
+                <section class="discount">
+                    <h2>Cupones disponibles</h2>
+                    <ul>
+                        <li>NuncaPares10%</li>
+                        <li>AprenderSiempre20%</li>
+                        <li>NeverStop30%</li>
+                    </ul>
+                </section>
+            </div>
+            
+        </section>
+    </main>
 
     <script src="./descuentos.js"></script>
 </body>

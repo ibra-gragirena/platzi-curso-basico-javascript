@@ -3,9 +3,12 @@ let lista = [];
 function savedata(){
     const inputAge = document.getElementById('Age').value;  
     const ageValue = lista.push(Number(inputAge)); 
+    
+    const content = [...lista] ;
+  document.getElementById('display').innerHTML = "Edades : " + content;
   }
 
-  function displayData() 
+  function deleteData() 
 {
   const content = [...lista] ;
   document.getElementById('display').innerHTML = "Edades : " + content;

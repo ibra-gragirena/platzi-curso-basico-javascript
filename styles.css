@@ -7,54 +7,73 @@
     --red : #F87474;
     --ocean : #14213d;
     --lightblue : #284073;
-    --sm: 1em;
-    --md: 1.5em;
-    --lg: 1.8em;
+    --sm: 3rem;
+    --md: 4rem;
+    --lg: 5rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 .linea{
     width: 800px;
 }
-header{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: var(--black);
-    border-radius: 2px;
-    color: var(--white);
-    border-radius: 32px;
-    border: 2px solid var(--ocean);
+html{
+    font-size: 62.5%;
 }
 body{
+    display: flex;
+    flex-direction: row;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Work Sans', sans-serif;  
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-items: center;
     background-color: var(--ocean);
-    border: 4px solid var(--darkbrown);
+    color: var(--white);
+    margin: 0;
+}
+h1 {
+    font-size: var(--lg);
+}
+h2{
+    font-size: var(--sm);
+}
+.nav-bar nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-content: space-between;
+    width: 80px;
+    height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+    
+}
+.nav-bar nav a.user {
+    transform: rotate(-90deg) translate(-300px, 0px);
+    font-size: var(--sm);
+    color: var(--orange);
+    font-weight: bold;
+}
+.nav-bar nav .js{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
 }
 .header-section{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
 }
-h2{
-  
+.titulos{
     font-size: var(--md);
     text-align: center;
     color: var(--gray);
     background-color: var(--ocean);
     border-radius: 26px;
     padding: 8px;
-    border: 8px solid var(--lightblue);
-
-
-
+    border: 8px solid var(--lightblue); 
 }
-h2.finalPrice{
+.titulos.finalPrice{
     color: var(--black);
     background-color: var(--red);
     width: 100%;
@@ -62,16 +81,102 @@ h2.finalPrice{
     border-radius: 8px;
     margin-top: 12px;
     text-align: center;
+    font-size: var(--md);   
+}
+.about{
+    margin: 50px;
+}
+.landingCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--ocean);
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+
+}
+.title{
+    font-size: 85px;
+    color: var(--white);
+    margin-bottom: 50px;
+    box-shadow: inset 0 0 0 0 var(--orange);
+    margin: 1 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .8s ease-in-out;
+}
+.title:hover{
+    box-shadow: inset 700px 0 0 0 var(--orange);
+    color: var(--ocean);
+  }
+.projects{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+    color: var(--gray);
+    padding-bottom: 40px;
+}
+.social-text{
+    margin-top: 70px;
+    font-size: var(--lg);
+}
+.social-text a{
+    color: var(--orange);
+}
+.social-text a:hover{
+    color: var(--red);
+}
+.box{
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 var(--orange);
+    margin: 1 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .8s ease-in-out;
+   
+}
+.box:hover{
+    box-shadow: inset 800px 0 0 0 var(--orange);
+    color: var(--ocean);
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    
+}
+.titleProject{
     font-size: 40px;
+    
+
+}
+.secondTitle{
+    font-size: 20px;
+    grid-column-start: 2;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    padding: 75px;
+   width: 100%;
+    align-items:flex-start;
+    background-color: var(--lightblue);
 
     
 }
-
-.card{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.taller{
+    display: flex;
+    margin-top: 50px;
+}
+.taller ul li {
+    margin: 20px 40px;
+    padding: 10px;
+    font-size: var(--sm);
+}
+.section{
     width: 100%;
     align-items:flex-start;
     justify-content: center;
@@ -87,6 +192,8 @@ h2.finalPrice{
 .triangle_section{
     display: flex;
     flex-direction: column;
+    background-color: var(--ocean);
+    border-radius: 8px;
 
 }
 .circle_section{
@@ -104,9 +211,7 @@ h2.finalPrice{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: center;
-    align-items: center;
-    grid-column-start: 1;
+    align-items: flex-start;
 }
 .label {
     font-size: var(--sm);
@@ -138,10 +243,10 @@ h2.finalPrice{
     margin: 8px;
 }
 .social{
-    position: absolute;
-    left: 890px;
-    top: 1050px;
+    position: relative;
+ 
 }
+
 .result{
     background-color: var(--blue);
     border-radius: 8px;
@@ -153,21 +258,6 @@ h2.finalPrice{
     height: 50px;
     margin: 8px;
     text-align: center;
-}
-img{
-    width: 50px;
-    height: 100%;
-    margin: 30px;
-    border-radius: 25%;
-    background-color: var(--white);
-
-}
-p {
-    font-size: var(--sm);
-    font-weight: bold;
-    margin-bottom: 4px;
-    width: 300px;
-    color: var(--gray);
 }
 hr.rounded {
    display: none;
@@ -224,7 +314,11 @@ hr.rounded {
     border-radius: 26px;
 }
   
-@media (max-width: 640px) {
+@media (max-width: 1020px) {
+    .banner{
+        display: flex;
+        flex-direction: column;        
+    }
     .card{
         display: flex;
         flex-direction: column;

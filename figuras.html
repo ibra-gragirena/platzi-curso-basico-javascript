@@ -11,16 +11,20 @@
     <title>Geometric Figures | Curso Práctico de Javascript en Platzi</title>
 </head>
 <body>
-    <header>
-        <img src="./icons/math.png" alt="math-logo">
-        <h1>G E O M E T R I C . C A L C</h1>
+    <header class="nav-bar">
+        <nav>
+            <div>
+                <img class="js" src="./icons/js.png" />
+            </div>    
+            <a class="user" href="https://www.linkedin.com/in/ibrahim-gragirena-0a2a38190/" target="_blank">@IBRAGRAGIRENA</a>
+        </nav> 
     </header>
 
     <section class="section">
         <!-- Square-->
 
         <div class="square_section">
-            <h2>Calculate the area and perimeter of a Square</h2>
+            <h2 class="titulos">Calculate the area and perimeter of a Square</h2>
             <form class="form">
                 <label class="label" for="inputSquare">
                     How long is each side of your square? 
@@ -37,7 +41,7 @@
 
 
         <div class="circle_section">
-            <h2>Calculate the area and perimeter of a Circle</h2>
+            <h2 class="titulos">Calculate the area and perimeter of a Circle</h2>
             <form class="form">
                 <label class="label" for="inputCircle">
                     How long is the radius of your circle?
@@ -53,7 +57,7 @@
             <!-- Triangulo-->
 
         <div class="triangle_section">
-            <h2>Calculate the area and perimeter of a Triangle</h2>
+            <h2 class="titulos">Calculate the area and perimeter of a Triangle</h2>
             <form class="form">
                 <p>How long are the parts of the triangle?</p>
 
@@ -90,7 +94,7 @@
                 <!-- Triangulo Isósceles-->
 
         <div class="triangle_section">
-            <h2>Calculate the Height of a Isosceles Triangle</h2>
+            <h2 class="titulos">Calculate the Height of a Isosceles Triangle</h2>
             <form class="form">
                 <p>How long are the parts of the triangle?</p>
 
@@ -110,14 +114,14 @@
                     Base
                 </label>
                 <input class="input" id="inputIsoscelesBase" type="number"/>
-
-
+                
                 <button class="primary-button" type="button" onclick="calculateIsoscelesHeight()">Calculate Height</button>
+                <div class="social">
+                    <h2> Made with love by : @ibragragirena</h2>
+                </div>
             </form>
         </div>
-        <div class="social">
-            <h2> Made with love by : @ibragragirena</h2>
-        </div>
+      
     </section>
 
 

@@ -11,56 +11,65 @@
     <title>Promedio, mediana, moda  | Curso Práctico de Javascript en Platzi</title>
 </head>
 <body>
-    <header>
-        <img src="./icons/math.png" />
-        <h1>Salarios</h1>
-
+    <header class="nav-bar">
+        <nav>
+            <div>
+                <img class="js" src="./icons/js.png" />
+            </div>    
+            <a class="user" href="https://www.linkedin.com/in/ibrahim-gragirena-0a2a38190/" target="_blank">@IBRAGRAGIRENA</a>
+        </nav> 
     </header>
+    <main>
+        <section class="card">
+            <div class="header-section">
+                <p>Taller #4 Analisis Salarial</p>
+                <h2 class="titulos">Analisis Salarial</h2>
+            </div>
     
-    <section class="card">
-        <div class="header-section">
-            <h2>Analisis Salarial</h2>
-        </div>
-
-        <form class="form">
-            <!--SALARY-->
-            <label class="label" for="salary">INGRESA SALARIOS</label>
-            <input class="input" id="salary" type="number" />
-
-            <input class="primary-button" type="button" value="Save" onclick="saveSalary()">
-            <input class="primary-button" type="button" value="Show salary" onclick="displaySalary()">
-
-            <button class="primary-button" type="button" onclick="displayPromedioSalary()">Calcular promedio</button>
-        </form>
-        <hr class="linea">
-        <form class="form">
+            <div class="taller">
+                <section>         
+                    <form class="form">
+                        <!--SALARY-->
+                        <label class="label" for="salary">INGRESA SALARIOS</label>
+                        <input class="input" id="salary" type="number" />
             
-             <!--TIPS-->
-            <label class="label" for="tips">INGRESA PROPINA</label>
-            <input class="input" id="tips" type="number" />
-            <input class="primary-button" type="button" value="Save" onclick="saveTips()">
-            <input class="primary-button" type="button" value="Show tips" onclick="displayTips()">
-        
-            <button class="primary-button" type="button" onclick="displayPromedioTips()">Calcular promedio</button>
+                        <input class="primary-button" type="button" value="Save" onclick="saveSalary()">
+                        <input class="primary-button" type="button" value="Show salary" onclick="displaySalary()">
             
-        </form>
-        
-        <div class="data">
-            <div class="displayImg">
-                <img src="./icons/percentage.png" />
+                        <button class="primary-button" type="button" onclick="displayPromedioSalary()">Calcular promedio</button>
+                    </form>
+                    <hr class="linea">
+                    <form class="form">
+                        
+                         <!--TIPS-->
+                        <label class="label" for="tips">INGRESA PROPINA</label>
+                        <input class="input" id="tips" type="number" />
+                        <input class="primary-button" type="button" value="Save" onclick="saveTips()">
+                        <input class="primary-button" type="button" value="Show tips" onclick="displayTips()">
+                    
+                        <button class="primary-button" type="button" onclick="displayPromedioTips()">Calcular promedio</button>
+                        
+                    </form>
+                    
+                    <div class="data">
+                        <div class="displayImg">
+                            <img src="./icons/percentage.png" />
+                        </div>
+                        <div id="display"></div>
+                    </div>
+            
+            
+                    <div class="dataTips">
+                        <div class="displayImg">
+                            <img src="./icons/percentage.png" />
+                        </div>
+                        <div id="secondDisplay"></div>
+                    </div>
+            
+                </section>
             </div>
-            <div id="display"></div>
-        </div>
-
-
-        <div class="dataTips">
-            <div class="displayImg">
-                <img src="./icons/percentage.png" />
-            </div>
-            <div id="secondDisplay"></div>
-        </div>
-
-    </section>
+        </section>
+    </main>
 
 
 
