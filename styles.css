@@ -41,7 +41,7 @@ h2{
     justify-content: space-between;
     flex-direction: column-reverse;
     align-content: space-between;
-    width: 80px;
+    width: 6vw;
     height: 100vh;
     background-color: var(--black);
     color: var(--white);
@@ -90,7 +90,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--ocean);
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
     justify-items: center;
 
@@ -108,18 +108,22 @@ h2{
     box-shadow: inset 700px 0 0 0 var(--orange);
     color: var(--ocean);
   }
+  .text{
+      font-size: var(--sm);
+  }
 .projects{
     display: grid;
     grid-template-rows: auto auto auto auto;
-    width: 100%;
+    width: 48vw;
     height: auto;
     background-color: var(--black);
     color: var(--gray);
-    padding-bottom: 40px;
+    padding-bottom: 7rem;
+    padding-right: 2rem;
 }
 .social-text{
     margin-top: 70px;
-    font-size: var(--lg);
+    font-size: var(--sm);
 }
 .social-text a{
     color: var(--orange);
@@ -314,10 +318,39 @@ hr.rounded {
     border-radius: 26px;
 }
   
-@media (max-width: 1020px) {
+@media (max-width: 1250px) {
+    body{
+        flex-direction: column;
+        min-width: 415px;
+    }
     .banner{
         display: flex;
         flex-direction: column;        
+    }
+    .landingCard{
+        grid-template-columns: 1fr;
+
+    }
+    .about{
+        margin: 8px;
+    }
+    .projects{
+        width: 100vw;
+        margin-top: 7vh;
+    }
+    .nav-bar nav {
+    
+    flex-direction: inherit;
+    align-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    
+    }
+    .nav-bar nav a.user {
+        transform: rotate(360deg) translate(-16px, 32px);
+    }
+    .nav-bar nav .js{
+        width: 90px;
     }
     .card{
         display: flex;
