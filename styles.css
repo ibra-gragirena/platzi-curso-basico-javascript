@@ -37,6 +37,7 @@ h2{
     font-size: var(--sm);
 }
 .nav-bar nav{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
@@ -63,15 +64,6 @@ h2{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-}
-.titulos{
-    font-size: var(--md);
-    text-align: center;
-    color: var(--gray);
-    background-color: var(--ocean);
-    border-radius: 26px;
-    padding: 8px;
-    border: 8px solid var(--lightblue); 
 }
 .titulos.finalPrice{
     color: var(--black);
@@ -166,6 +158,7 @@ main {
    width: 100%;
     align-items:flex-start;
     background-color: var(--lightblue);
+    margin: 30px;
 
     
 }
@@ -178,6 +171,16 @@ main {
     margin: 20px 40px;
     padding: 10px;
     font-size: var(--sm);
+}
+.tallerFiguras{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    font-size: var(--sm);
+}
+.taller img {
+    width: 100px;
+    height: 100px;
 }
 .section{
     width: 100%;
@@ -195,20 +198,11 @@ main {
 .triangle_section{
     display: flex;
     flex-direction: column;
-    background-color: var(--ocean);
+    background-color: var(--lightblue);
     border-radius: 8px;
-
-}
-.circle_section{
-    display: flex;
-    flex-direction: column;
     border: solid 8px var(--olive);
 
-}
-.triangle_section{
-    display: flex;
-    flex-direction: column;
-    border: solid 8px var(--olive);
+
 }
 .form{
     display: flex;
@@ -219,7 +213,7 @@ main {
 .label {
     font-size: var(--sm);
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 20px;
     width: 300px;
     color: var(--gray);
 }
@@ -323,7 +317,6 @@ hr.rounded {
     body{
         flex-direction: column;
         min-width: 415px;
-        background-color: var(--ocean);
     
     }
     .banner{
@@ -343,25 +336,29 @@ hr.rounded {
     }
     
     .nav-bar nav {
-    flex-direction: inherit;
-    align-content: space-between;
-    width: 100%;
-    height: 100px;
+        position:;
+        flex-direction: inherit;
+        align-content: space-between;
+        width: 100%;
+        height: 100px;
     
     }
     .nav-bar nav a.user {
         transform: rotate(360deg) translate(-16px, 32px);
     }
     .nav-bar nav .js{
-        width: 90px;
+        width: 100px;
     }
     .card{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: stretch
-        ;
+        align-items: stretch;
+        
       
+    }
+    main {
+        margin-top: 18vh;
     }
     hr.rounded {
         display: block;

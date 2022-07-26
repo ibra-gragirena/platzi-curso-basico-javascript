@@ -20,109 +20,112 @@
         </nav> 
     </header>
 
-    <section class="section">
-        <!-- Square-->
-
-        <div class="square_section">
-            <h2 class="titulos">Calculate the area and perimeter of a Square</h2>
-            <form class="form">
-                <label class="label" for="inputSquare">
-                    How long is each side of your square? 
-                </label>
-                <img src="./icons/square.png" alt="square">
-                <input class="input" id="inputSquare" type="number"/>
-                <button class="primary-button" type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
-                <button class="primary-button" type="button" onclick="calculateSquareArea()">Calculate area</button>
-            </form>
-        </div>
-
-        <hr class="rounded">
-                <!-- Circulo-->
-
-
-        <div class="circle_section">
-            <h2 class="titulos">Calculate the area and perimeter of a Circle</h2>
-            <form class="form">
-                <label class="label" for="inputCircle">
-                    How long is the radius of your circle?
-                </label>
-                <img src="./icons/circle.png" alt="circle">
-                <input class="input"  id="inputCircle" type="number"/>
-                <button class="primary-button" type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
-                <button class="primary-button" type="button" onclick="calculateCircleArea()">Calculate area</button>
-            </form>
-        </div>
-
-        <hr class="rounded">
-            <!-- Triangulo-->
-
-        <div class="triangle_section">
-            <h2 class="titulos">Calculate the area and perimeter of a Triangle</h2>
-            <form class="form">
-                <p>How long are the parts of the triangle?</p>
-
-                <img src="./icons/triangle.png" alt="triangle">
-                <label class="label" for="inputTriangle1">
-                    Side A
-                </label>
-                <input class="input"  id="inputTriangle1" type="number"/>
-
-
-                <label class="label"  for="inputTriangle2">
-                    Side B
-                </label>
-                <input class="input"  id="inputTriangle2" type="number"/>
-
-
-                <label class="label" for="inputTriangleBase">
-                    Base
-                </label>
-                <input class="input"  id="inputTriangleBase" type="number"/>
-
-
-                <label class="label" for="inputTriangleHeight">
-                    Height
-                </label>
-                <input class="input"  id="inputTriangleHeight" type="number"/>
-
-                <button class="primary-button" type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
-                <button class="primary-button" type="button" onclick="calculateTriangleArea()">Calculate area</button>
-            </form>
-        </div>
-
-        <hr class="rounded">
-                <!-- Triangulo Isósceles-->
-
-        <div class="triangle_section">
-            <h2 class="titulos">Calculate the Height of a Isosceles Triangle</h2>
-            <form class="form">
-                <p>How long are the parts of the triangle?</p>
-
-                <img src="./icons/triangle.png" alt="triangle">
-
-                <label class="label"  for="inputIsosceles1">
-                    Side A
-                </label>
-                <input class="input"  id="inputIsosceles1" type="number"/>
-
-                <label class="label"  for="inputIsosceles2">
-                    Side B
-                </label>
-                <input class="input"  id="inputIsosceles2" type="number"/>
-
-                <label class="label" for="inputIsoscelesBase">
-                    Base
-                </label>
-                <input class="input" id="inputIsoscelesBase" type="number"/>
-                
-                <button class="primary-button" type="button" onclick="calculateIsoscelesHeight()">Calculate Height</button>
-                <div class="social">
-                    <h2> Made with love by : @ibragragirena</h2>
+    <main>
+        <section class="card">
+            <header>
+                <h2>Taller #2 Porcentajes y descuentos</h2>
+                <h1>Calcula el precio final con descuento</h1>
+            </header>
+            <!-- Square-->
+    
+            <div class="taller tallerFiguras"">
+                <div class="square_section">
+                    <form class="form">
+                        <label class="label" for="inputSquare">
+                            How long is each side of your square? 
+                        </label>
+                        <img src="./icons/square.png" alt="square">
+                        <input class="input" id="inputSquare" type="number"/>
+                        <button class="primary-button" type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
+                        <button class="primary-button" type="button" onclick="calculateSquareArea()">Calculate area</button>
+                    </form>
                 </div>
-            </form>
-        </div>
-      
-    </section>
+        
+                <hr class="rounded">
+                        <!-- Circulo-->
+        
+        
+                <div class="circle_section">
+                    <form class="form">
+                        <label class="label" for="inputCircle">
+                            How long is the radius of your circle?
+                        </label>
+                        <img src="./icons/circle.png" alt="circle">
+                        <input class="input"  id="inputCircle" type="number"/>
+                        <button class="primary-button" type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
+                        <button class="primary-button" type="button" onclick="calculateCircleArea()">Calculate area</button>
+                    </form>
+                </div>
+        
+                <hr class="rounded">
+                    <!-- Triangulo-->
+        
+                <div class="triangle_section">
+                    <form class="form">
+                        <label class="label">How long are the parts of the triangle?</label>
+        
+                        <img src="./icons/triangle.png" alt="triangle">
+                        <label class="label" for="inputTriangle1">
+                            Side A
+                        </label>
+                        <input class="input"  id="inputTriangle1" type="number"/>
+        
+        
+                        <label class="label"  for="inputTriangle2">
+                            Side B
+                        </label>
+                        <input class="input"  id="inputTriangle2" type="number"/>
+        
+        
+                        <label class="label" for="inputTriangleBase">
+                            Base
+                        </label>
+                        <input class="input"  id="inputTriangleBase" type="number"/>
+        
+        
+                        <label class="label" for="inputTriangleHeight">
+                            Height
+                        </label>
+                        <input class="input"  id="inputTriangleHeight" type="number"/>
+        
+                        <button class="primary-button" type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
+                        <button class="primary-button" type="button" onclick="calculateTriangleArea()">Calculate area</button>
+                    </form>
+                </div>
+        
+                <hr class="rounded">
+                        <!-- Triangulo Isósceles-->
+        
+                <div class="triangle_section">
+                    <form class="form">
+                        <label class="label">How long are the parts of the triangle?</label>
+        
+                        <img src="./icons/triangle.png" alt="triangle">
+        
+                        <label class="label"  for="inputIsosceles1">
+                            Side A
+                        </label>
+                        <input class="input"  id="inputIsosceles1" type="number"/>
+        
+                        <label class="label"  for="inputIsosceles2">
+                            Side B
+                        </label>
+                        <input class="input"  id="inputIsosceles2" type="number"/>
+        
+                        <label class="label" for="inputIsoscelesBase">
+                            Base
+                        </label>
+                        <input class="input" id="inputIsoscelesBase" type="number"/>
+                        
+                        <button class="primary-button" type="button" onclick="calculateIsoscelesHeight()">Calculate Height</button>
+                    
+                    </form>
+                </div>
+            </div>
+          
+        </section> 
+    </main>
+    
 
 
 
