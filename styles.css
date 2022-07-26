@@ -76,13 +76,13 @@ h2{
     font-size: var(--md);   
 }
 .about{
-    margin: 50px;
+    margin: 30px 120px;
 }
 .landingCard{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--ocean);
-    width: 95vw;
+    width: 100vw;
     height: 100vh;
     justify-items: center;
 
@@ -354,11 +354,20 @@ hr.rounded {
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
+        margin-top: 45vh;;
         
       
     }
     main {
-        margin-top: 18vh;
+        margin-top: 13vh;
+    }
+    .taller{
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .discount{
+
     }
     hr.rounded {
         display: block;
