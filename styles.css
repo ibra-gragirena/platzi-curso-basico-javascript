@@ -26,7 +26,7 @@ body{
     display: flex;
     flex-direction: row;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--ocean);
+    background-color: var(--lightblue);
     color: var(--white);
     margin: 0;
 }
@@ -114,8 +114,6 @@ h2{
 .projects{
     display: grid;
     grid-template-rows: auto auto auto auto;
-    width: 48vw;
-    height: auto;
     background-color: var(--black);
     color: var(--gray);
     padding-bottom: 7rem;
@@ -174,6 +172,7 @@ main {
 .taller{
     display: flex;
     margin-top: 50px;
+    justify-content: space-between;
 }
 .taller ul li {
     margin: 20px 40px;
@@ -228,23 +227,23 @@ main {
     background-color: var();
     border: none;
     border-radius: 8px;
-    height: 30px;
-    width: 50%;
-    font-size: var(--md);
+    height: 4vh;
+    width: 75%;
+    font-size: var(--sm);
     padding: 6px;
-    margin: 12px;
+    margin: 2vh 0vh;
 }
 .primary-button {
     background-color: var(--orange);
-    border-radius: 8px;
+    border-radius: 18px;
     border: none;
     color: var(--black);
-    width: 50%;
+    width: 75%;
     cursor: pointer;
     font-size: var(--sm);
     font-weight: bold;
-    height: 50px;
-    margin: 8px;
+    height: 5vh;
+    margin: 2vh 0vh;
 }
 .social{
     position: relative;
@@ -253,16 +252,18 @@ main {
 
 .result{
     background-color: var(--blue);
-    border-radius: 8px;
+    border-radius: 9px;
     border: none;
     color: var(--white);
     width: 100%;
     font-size: 40px;
     font-weight: bold;
-    height: 50px;
     margin: 8px;
     text-align: center;
+    height: 5vh;
+    margin: 2vh 0vh;
 }
+
 hr.rounded {
    display: none;
 }
@@ -318,32 +319,34 @@ hr.rounded {
     border-radius: 26px;
 }
   
-@media (max-width: 1250px) {
+@media (max-width: 800px) {
     body{
         flex-direction: column;
         min-width: 415px;
+        background-color: var(--ocean);
+    
     }
     .banner{
         display: flex;
         flex-direction: column;        
     }
+  
     .landingCard{
         grid-template-columns: 1fr;
+        width: 120vw;
+        height: 115vh;
+        justify-items: start;
 
     }
     .about{
         margin: 8px;
     }
-    .projects{
-        width: 100vw;
-        margin-top: 7vh;
-    }
-    .nav-bar nav {
     
+    .nav-bar nav {
     flex-direction: inherit;
     align-content: space-between;
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    height: 100px;
     
     }
     .nav-bar nav a.user {
