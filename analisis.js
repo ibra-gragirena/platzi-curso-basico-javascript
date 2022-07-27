@@ -41,16 +41,11 @@ function displayPromedioSalary() {
 function displayTips() 
 {
   let content = [...tipsSorted];
-    document.getElementById('display').innerHTML = "Tips : " + content;
     document.getElementById('secondDisplay').innerHTML = "Tips : " + content;
 }
 function displayPromedioTips() {
     let content =  calcularMediaAritmetica(tipsSorted);
-    
-
-     document.getElementById("display");
-    display.innerText = "El promedio de tips es de " + content + " $";
-  
+      
     document.getElementById("secondDisplay");
     secondDisplay.innerText = "El promedio de tips es de " + content + " $";
   

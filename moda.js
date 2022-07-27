@@ -1,15 +1,3 @@
-const lista = [
-    10,
-    23,
-    18,
-    10,
-    23,
-    14,
-    23,
-    18,
-    10,
-    10,
-]
 
 function displayModa() 
   {

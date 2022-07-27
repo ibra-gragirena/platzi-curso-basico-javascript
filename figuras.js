@@ -95,7 +95,8 @@ function calculateSquarePerimeter(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    let display = document.getElementById("squareResult");
+     display.innerText = "El perímetro es de " + perimetro ;
 };
 
 function calculateSquareArea(){
@@ -103,7 +104,9 @@ function calculateSquareArea(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    let display = document.getElementById("squareResult");
+    display.innerText = "El área es de " + area ;
+
 };
 
 //CIRCLE
@@ -113,7 +116,9 @@ function calculateCirclePerimeter() {
     const value = input.value;
 
     const perimetro = perimetroCirculo(value)
-    alert(perimetro);
+    let display = document.getElementById("circleResult");
+    display.innerText = "El perímetro es de " + perimetro ;
+
 };
 
 function calculateCircleArea() {
@@ -121,7 +126,9 @@ function calculateCircleArea() {
     const value = input.value;
 
     const area = areaCirculo(value);
-    alert(area);
+    let display = document.getElementById("circleResult");
+    display.innerText = "El área es de " + area ;
+
 };
 
 //TRANGLE
@@ -137,7 +144,8 @@ function calculateTrianglePerimeter() {
 
  
     const perimetro = perimetroTriangulo(value1, value2, valueBase);
-    alert(perimetro);
+    let display = document.getElementById("triangleResult");
+    display.innerText = "El perímetro es de " + perimetro ;
 }
 
 function calculateTriangleArea() {
@@ -148,7 +156,9 @@ function calculateTriangleArea() {
     const valueHeight = inputHeight.value;
 
     const area = areaTriangulo(valueBase, valueHeight);
-    alert(area); 
+    let display = document.getElementById("triangleResult");
+    display.innerText = "El área es de " + area ;
+
 }
 
 //Isosceles 
@@ -162,5 +172,7 @@ function calculateIsoscelesHeight() {
     const valueBase = Number(inputBase.value);
 
     const height = alturaTrianguloIsosceles(value1, value2, valueBase);
-    alert(height);
+    let display = document.getElementById("triangleSecondResult");
+    display.innerText = "La altura del triangulo es " + height ;
+
 }

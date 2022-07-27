@@ -1,15 +1,3 @@
-let lista = [
-    80,
-    30,
-    10,
-    40,
-    26,
-    1,
-    26,
-    30,
-    20,
-    
-];
 
 function savedata(){
     const inputAge = document.getElementById('Age').value;  

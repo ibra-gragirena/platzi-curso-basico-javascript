@@ -16,9 +16,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.linea{
-    width: 800px;
-}
+
 html{
     font-size: 62.5%;
 }
@@ -36,6 +34,12 @@ h1 {
 h2{
     font-size: var(--sm);
 }
+a{
+    text-decoration: none;
+    color: var(--ocean);
+}
+
+
 .nav-bar nav{
     position: fixed;
     display: flex;
@@ -43,7 +47,7 @@ h2{
     flex-direction: column-reverse;
     align-content: space-between;
     width: 6vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--black);
     color: var(--white);
     
@@ -60,11 +64,7 @@ h2{
     height: auto;
     margin-bottom: 60px;
 }
-.header-section{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-}
+
 .titulos.finalPrice{
     color: var(--black);
     background-color: var(--red);
@@ -106,13 +106,12 @@ h2{
 .projects{
     display: grid;
     grid-template-rows: auto auto auto auto;
-    background-color: var(--black);
-    color: var(--gray);
+    background-color: var(--white);
     padding-bottom: 7rem;
     padding-right: 2rem;
 }
 .social-text{
-    margin-top: 70px;
+    margin-top: 25px;
     font-size: var(--sm);
 }
 .social-text a{
@@ -128,7 +127,7 @@ h2{
     margin: 1 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .8s ease-in-out;
-   
+    color: white;
 }
 .box:hover{
     box-shadow: inset 800px 0 0 0 var(--orange);
@@ -232,7 +231,7 @@ main {
     border-radius: 18px;
     border: none;
     color: var(--black);
-    width: 75%;
+    width: 100%;
     cursor: pointer;
     font-size: var(--sm);
     font-weight: bold;
@@ -250,7 +249,7 @@ main {
     border: none;
     color: var(--white);
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin: 8px;
     text-align: center;
@@ -301,13 +300,6 @@ hr.rounded {
 
 
 }
-.displayImg{
-    grid-row-start: 1;
-    grid-column-start: 2;
-}
-.displayImg img{
-    width: 50px;
-}
 .container{
     background-color: var(--lightblue);
     border-radius: 26px;
@@ -336,7 +328,7 @@ hr.rounded {
     }
     
     .nav-bar nav {
-        position:;
+        position:fixed;
         flex-direction: inherit;
         align-content: space-between;
         width: 100%;
@@ -366,17 +358,17 @@ hr.rounded {
         flex-direction: column;
     
     }
-    .discount{
-
-    }
-    hr.rounded {
-        display: block;
-        width: 100%;
-        border-top: 8px solid var(--black);
-        border-radius: 2px;
-    }
+    .tallerFiguras{
+        grid-template-columns: 1fr;
+        margin-top: 170vh;  }
     .social{
         display: none;
+    }
+    .form{
+        align-items: flex-start;
+    }
+    .label{
+        width: 100%;
     }
    #display{
     font-size: 5vw;

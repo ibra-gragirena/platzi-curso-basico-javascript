@@ -14,33 +14,42 @@
     <header class="nav-bar">
         <nav>
             <div>
-                <img class="js" src="./icons/js.png" />
-            </div>    
+                <a href="./index.html">
+                    <img class="js" src="./icons/js.png" />
+                </a>
+            </div>     
             <a class="user" href="https://www.linkedin.com/in/ibrahim-gragirena-0a2a38190/" target="_blank">@IBRAGRAGIRENA</a>
         </nav> 
     </header>
-    
-    <section class="card">
-        <div class="container">
-            <h2 class="titulos">Calcula el promedio de edades de los alumnos</h2>
-    
-            <form class="form">
-    
-                <label class="label" for="Age">COLOCA LA EDAD ACÁ</label>
-                <input class="input" id="Age" type="number" />
-    
-                <input class="primary-button" type="button" value="Save" onclick="savedata()">
-                <input class="primary-button" type="button" value="Show data" onclick="displayData()">
-    
-                <button class="primary-button" type="button" onclick="calcularMediaAritmetica(lista)">Calcular promedio</button>
-            </form>
-            
-    
-            <div id="display"></div>
-        </div>
+    <main>
 
-        </div>
-    </section>
+        <section class="card">
+            <div class="container">
+                <header>
+                    <h2>Taller #3 Promedio , mediana y moda</h2>
+                    <h1>Calcula datos estadísticos de una lista</h1>
+                </header>        
+                <form class="form">
+        
+                    <label class="label" for="Age">COLOCA LA EDAD   </label>
+                    <input class="input" id="Age" type="number" />
+        
+                    <input class="primary-button" type="button" value="Save" onclick="saveData()">
+        
+                    <button class="primary-button" type="button" onclick="calcularMediaAritmetica(lista)">Calcular promedio</button>
+                    <button class="primary-button" type="button" onclick="calcularPIC(lista)">Calcular promedio intercuartil</button>
+                    <button class="primary-button" type="button" onclick="calcularMediana(lista)">Calcular mediana</button>
+                    <button class="primary-button" type="button" onclick="displayModa()">Calcular moda</button>
+                </form>
+                
+        
+                <div id="display"></div>
+                
+           
+
+            </div>
+        </section>
+    </main>
 
 
 

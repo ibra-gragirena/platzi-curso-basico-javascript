@@ -14,7 +14,9 @@
     <header class="nav-bar">
         <nav>
             <div>
-                <img class="js" src="./icons/js.png" />
+                <a href="./index.html">
+                    <img class="js" src="./icons/js.png" />
+                </a>
             </div>    
             <a class="user" href="https://www.linkedin.com/in/ibrahim-gragirena-0a2a38190/" target="_blank">@IBRAGRAGIRENA</a>
         </nav> 
@@ -39,9 +41,10 @@
                         <button class="primary-button" type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
                         <button class="primary-button" type="button" onclick="calculateSquareArea()">Calculate area</button>
                     </form>
+                    <div class="result" id="squareResult"></div>
+
                 </div>
         
-                <hr class="rounded">
                         <!-- Circulo-->
         
         
@@ -55,9 +58,11 @@
                         <button class="primary-button" type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
                         <button class="primary-button" type="button" onclick="calculateCircleArea()">Calculate area</button>
                     </form>
+                    <div class="result" id="circleResult"></div>
+
                 </div>
         
-                <hr class="rounded">
+            
                     <!-- Triangulo-->
         
                 <div class="triangle_section">
@@ -91,9 +96,10 @@
                         <button class="primary-button" type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
                         <button class="primary-button" type="button" onclick="calculateTriangleArea()">Calculate area</button>
                     </form>
+                    <div class="result" id="triangleResult"></div>
+
                 </div>
         
-                <hr class="rounded">
                         <!-- Triangulo Isósceles-->
         
                 <div class="triangle_section">
@@ -118,7 +124,8 @@
                         <input class="input" id="inputIsoscelesBase" type="number"/>
                         
                         <button class="primary-button" type="button" onclick="calculateIsoscelesHeight()">Calculate Height</button>
-                    
+                        <div class="result" id="triangleSecondResult"></div>
+
                     </form>
                 </div>
             </div>

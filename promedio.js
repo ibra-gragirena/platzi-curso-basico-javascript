@@ -1,19 +1,14 @@
 let lista = [];
 
-function savedata(){
+function saveData(){
     const inputAge = document.getElementById('Age').value;  
     const ageValue = lista.push(Number(inputAge)); 
     
-    const content = [...lista] ;
+    let content = [...lista] ;
   document.getElementById('display').innerHTML = "Edades : " + content;
   }
 
-  function deleteData() 
-{
-  const content = [...lista] ;
-  document.getElementById('display').innerHTML = "Edades : " + content;
-}
- 
+
 
 function calcularMediaAritmetica(lista) {
 
